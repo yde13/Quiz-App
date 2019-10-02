@@ -1,14 +1,15 @@
 
-//skapa currentquestion +1 som skriver ut frågor när man trycker på knapp
-//få ut hur många frågor man svarat på 
-//spara värde så man ser score i slutet
-//kunna trycka på checkboxes som sparas nånstans
+//spara värdet noofquestion och skriva ut så många frågor som spelare vill ha
+//spara värde så man ser score i slutet och hur många frågor man svarat på
+//kunna trycka på checkboxes som sparas nånstans(checked)
 
 class Quiz {
     constructor(name) {
         this.name = name;
         this.noOfQuestions = noOfQuestions;
         this.quests = [];
+        this.currentQuestion = 0;
+
     }
     setName(){
         this.name = document.getElementById("name").value;
@@ -18,12 +19,13 @@ class Quiz {
     }
 }
 
+
+
 class Question {
     constructor(category, question, answer) {
         this.category = category;
         this.question = question;
-        this.answer = answer;
-        this.currentQuestion = 0;    
+        this.answer = answer;    
     }
 
     addQuests(json) {
@@ -34,7 +36,7 @@ class Question {
     }    
 }
 
-function demoDisplay() {
+function display() {
     document.getElementById("display").style.display = "none";
   }
 
@@ -58,8 +60,9 @@ start.addEventListener("click", function(e){
     quiz.setnoOfQuestions();
     console.log( quiz.name,'\n', quiz.noOfQuestions,'\n', question,'\n', answer1,'\n', answer2,'\n', answer3,'\n', answer4);
 });
-
 });
+
+
 
 let choices = document.getElementById("choices");
 choices.addEventListener('click', (event)=>
