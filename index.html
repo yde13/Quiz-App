@@ -27,10 +27,12 @@
                 skriv in hur många frågor du vill köra
                 <br>
                 <br>
-                <input id="noOfQuestions" type="number" min="1" max="5">
+                <input id="noOfQuestions" type="number" min="1" max="12">
             </p>
+            <button id="start" onclick="display()">Start</button>
             </span>
-            <div id="choices" class="mystyle anotherClass thirdClass">
+            <br>
+            <span id="choices" class="hidden">
                 <input type="checkbox" id="choice1" class="checkboxes"><span id="answer1"></span>
                 <br>
                 <input type="checkbox" id="choice2" class="checkboxes"><span id="answer2"></span>
@@ -38,10 +40,11 @@
                 <input type="checkbox" id="choice3" class="checkboxes"><span id="answer3"></span>
                 <br>
                 <input type="checkbox" id="choice4" class="checkboxes"><span id="answer4"></span>
-            </div>
-            <hr style="margin-bottom: 50px">
-            <button id="start" onclick="display()">Start</button>
             
+            <hr style="margin-bottom: 50px">
+            
+            <button id="next"> Next</button>
+            </span>
             <br>
             <footer>
                     <p  id="progress">x av y</p>

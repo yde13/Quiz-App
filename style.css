@@ -6,6 +6,11 @@ body{
     margin:0;
     font-size: 10px;
     color: #eeeeee;
+
+}
+
+.hidden {
+  display: none;
 }
 #display{
   color: #57636e;
@@ -60,6 +65,18 @@ h3{
     color: #5a6772
 }
 #start{
+  background-color: #778897;
+  width: 60px;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #1d3c6a;
+  border-radius: 30px;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+#next{
   background-color: #778897;
   width: 60px;
   font-size: 15px;
