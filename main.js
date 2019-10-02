@@ -40,7 +40,7 @@ function display() {
     document.getElementById("display").style.display = "none";
   }
 
-let json = getJSON("http://www.mocky.io/v2/5d91d2df310000ea8110cae6");
+let json = getJSON("http://www.mocky.io/v2/5d949e5c2f00002d008ff84c");
 let questionObject = new Question();
 let quiz = new Quiz(); 
 
