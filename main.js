@@ -59,23 +59,26 @@ document.addEventListener("DOMContentLoaded", function(e){
     let start = document.getElementById("start");
     
 start.addEventListener("click", function(e){
-    let question = document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
-    let answer1 = document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
-    let answer2 = document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
-    let answer3 = document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
-    let answer4 = document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
+    document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
+    document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
+    document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
+    document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
+    document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
     quiz.setName();
     quiz.setnoOfQuestions();
+    progress();
     console.log( quiz.name,'\n', quiz.noOfQuestions,'\n', question,'\n', answer1,'\n', answer2,'\n', answer3,'\n', answer4);
 });
+
 next.addEventListener("click", function(e){
-    let question = document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
-    let answer1 = document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
-    let answer2 = document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
-    let answer3 = document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
-    let answer4 = document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
+    document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
+    document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
+    document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
+    document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
+    document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
     quiz.setName();
     quiz.setnoOfQuestions();
+    progress();
 });
 });
 
@@ -97,6 +100,6 @@ function checkAnswer(answer){
 }
 
 function progress(){
-    document.getElementById("progress");
-    progress.innerHTML = "Question" + (currentQuestion+1) + "of" + totalQuestions;
+    let progress = document.getElementById("progress");
+    progress.innerHTML = "Question " + (quiz.currentQuestion+1) + " of " + quiz.noOfQuestions;
 }
