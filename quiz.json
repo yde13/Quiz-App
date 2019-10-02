@@ -1,0 +1,114 @@
+{
+    "questions": [
+        {
+            "category": "Hockey",
+            "question": "Vem har gjort flest poäng i NHLs historia?",
+            "answers": [
+                {
+                    "alt": "Wayne Gretzky",
+                    "correct": true
+                },
+                {
+                    "alt": "Alexander Ovechkin",
+                    "correct": false
+                },
+                {
+                    "alt": "Sidney Crosby",
+                    "correct": false
+                },
+                {
+                    "alt": "Mario Lemieux",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "Vilka stockholmslag spelar i allsvenskan och shl?",
+            "answers": [
+                {
+                    "alt": "Hammarby",
+                    "correct": false
+                },
+                {
+                    "alt": "Djurgården",
+                    "correct": true
+                },
+                {
+                    "alt": "Aik",
+                    "correct": true
+                },
+                {
+                    "alt": "Vallentuna",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "Vilka har slutat på hockey?",
+            "answers": [
+                {
+                    "alt": "Lidström",
+                    "correct": true
+                },
+                {
+                    "alt": "Foppa",
+                    "correct": true
+                },
+                {
+                    "alt": "McDavid",
+                    "correct": false
+                },
+                {
+                    "alt": "Sakic",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "I vilka lag har Jesper Bratt spelat i?",
+            "answers": [
+                {
+                    "alt": "Aik",
+                    "correct": true
+                },
+                {
+                    "alt": "Edmonton oilers",
+                    "correct": false
+                },
+                {
+                    "alt": "Calgary flames",
+                    "correct": false
+                },
+                {
+                    "alt": "New Jersey devils",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "Vilka föremål använder man i hockey?",
+            "answers": [
+                {
+                    "alt": "Klubba",
+                    "correct": true
+                },
+                {
+                    "alt": "Penna",
+                    "correct": false
+                },
+                {
+                    "alt": "Puck",
+                    "correct": true
+                },
+                {
+                    "alt": "Papper",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

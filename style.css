@@ -1,0 +1,183 @@
+body{
+    background-color: #050505;
+    font-family: "Press Start 2P";
+}
+#choices{
+    margin:0;
+    font-size: 10px;
+}
+#display{
+  color: #57636e;
+  font-size: 13px;
+}
+.grid_menu{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(2, 2, 2);
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #050505;
+    box-shadow: 10px 15px 5px #242121;
+    margin-top: 50px;
+}
+.grid{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #242121;
+    margin-top: 50px;
+}
+.grid_menu h1{
+    font-family: "Press Start 2P";
+    background-color: black;
+    font-size:25px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0px;   
+}
+h3{
+    font-family: "Press Start 2P";
+    background-color: black;
+    font-size:15px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0px;  
+}
+
+/*#name{
+    background-color: #778897;
+    width: 120px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Press Start 2P"; 
+}
+*/
+#choices{
+  color: #eeeeee;
+}
+.grid h1{
+    font-family: "Press Start 2P";
+    background-color: black;
+    font-size:20px;
+    text-align: center;
+    color: #fff;
+    padding: 2px 0px;
+      
+}
+.grid #question{
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: #5a6772
+}
+.buttons{
+    margin-top: 30px;
+}
+#start{
+  background-color: #778897;
+  width: 60px;
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #1d3c6a;
+  border-radius: 30px;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+#nextQuestion{
+    background-color: #778897;
+    width: 60px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #1d3c6a;
+    border-radius: 30px;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+#progress{
+    color: #2b2b2b;
+    font-size: 15px;
+    text-align: center;
+}
+#nextQuestion:hover, #start:hover{
+    cursor: pointer;
+    background-color: #57636e
+}
+#nextQuestion:focus, #start:focus{
+    outline: 0;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: bg-animation 10s infinite;
+  }
+  
+  @-webkit-keyframes bg-animation {
+    0% {
+      background-color: red;
+    }
+    15% {
+      background-color: yellow;
+    }
+    30% {
+      background-color: green;
+    }
+    45% {
+      background-color: blue;
+    }
+    60% {
+      background-color: purple;
+    }
+    75% {
+      background-color: pink;
+    }
+    90% {
+      background-color: brown;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+  
+  @keyframes bg-animation {
+    0% {
+      background-color: red;
+    }
+    15% {
+      background-color: yellow;
+    }
+    30% {
+      background-color: green;
+    }
+    45% {
+      background-color: blue;
+    }
+    60% {
+      background-color: purple;
+    }
+    75% {
+      background-color: pink;
+    }
+    90% {
+      background-color: brown;
+    }
+    100% {
+      background-color: red;
+    }
+  }

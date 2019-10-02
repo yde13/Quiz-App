@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper_questions">
+    <div class="background">
+        <div class="grid">
+            <div id="question">
+                <h1>Welcome To The Hockey-quiz</h1>
+            </div>
+            
+            <hr style="margin-bottom: 20px">
+            <span id="display">
+            <p>
+                skriv in ditt namn:
+                <br>
+                <br>
+                <input id="name" type="text">
+                <br>
+                <br>
+                skriv in hur många frågor du vill köra
+                <br>
+                <br>
+                <input id="noOfQuestions" type="number" min="1" max="5">
+            </p>
+            </span>
+            <div id="choices" class="mystyle anotherClass thirdClass">
+                <input type="checkbox" id="choice1"><span id="answer1"></span>
+                <br>
+                <input type="checkbox" id="choice2"><span id="answer2"></span>
+                <br>
+                <input type="checkbox" id="choice3"><span id="answer3"></span>
+                <br>
+                <input type="checkbox" id="choice4"><span id="answer4"></span>
+            </div>
+            <hr style="margin-bottom: 50px">
+            <button id="start" onclick="demoDisplay()">Start</button>
+            
+            <br>
+            <footer>
+                    <p  id="progress">x av y</p>
+            </footer>
+        </div>
+    </div>
+</div> 
+    <script src="readjson.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="quiz.json"></script>  -->
+</body>
+
+</html>
