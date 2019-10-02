@@ -24,7 +24,7 @@
         },
         {
             "category": "Hockey",
-            "question": "Vilka stockholmslag spelar i allsvenskan och shl?",
+            "question": "Vilka Stockholmslag spelar i allsvenskan och SHL?",
             "answers": [
                 {
                     "alt": "Hammarby",
@@ -90,10 +90,32 @@
         },
         {
             "category": "Hockey",
+            "question": "Vilket lag spelar Henrik Lundqvist i?",
+            "answers": [
+                {
+                    "alt": "Chicago Blackhawks",
+                    "correct": false
+                },
+                {
+                    "alt": "Carolina Hurricanes",
+                    "correct": false
+                },
+                {
+                    "alt": "New York Rangers",
+                    "correct": true
+                },
+                {
+                    "alt": "Pittsburgh Penguins",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
             "question": "Vilka föremål använder man i hockey?",
             "answers": [
                 {
-                    "alt": "Klubba",
+                    "alt": "Puck",
                     "correct": true
                 },
                 {
@@ -101,26 +123,26 @@
                     "correct": false
                 },
                 {
-                    "alt": "Puck",
-                    "correct": true
+                    "alt": "Linjal",
+                    "correct": false
                 },
                 {
-                    "alt": "Papper",
-                    "correct": false
+                    "alt": "Skridskor",
+                    "correct": true
                 }
             ]
         },
         {
             "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
+            "question": "Vilket lag vann StanleyCup 2017?",
             "answers": [
                 {
-                    "alt": "Aik",
-                    "correct": true
+                    "alt": "Washington Capitals",
+                    "correct": false
                 },
                 {
-                    "alt": "Edmonton oilers",
-                    "correct": false
+                    "alt": "Pittsburgh Penguins",
+                    "correct": true
                 },
                 {
                     "alt": "Calgary flames",
@@ -128,139 +150,117 @@
                 },
                 {
                     "alt": "New Jersey devils",
-                    "correct": true
+                    "correct": false
                 }
             ]
         },
         {
             "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
+            "question": "Vilka NHL-lag finns i New York området?",
             "answers": [
                 {
-                    "alt": "Aik",
+                    "alt": "Devils",
                     "correct": true
                 },
                 {
-                    "alt": "Edmonton oilers",
+                    "alt": "Rangers",
+                    "correct": true
+                },
+                {
+                    "alt": "Islanders",
+                    "correct": true
+                },
+                {
+                    "alt": "Kings",
                     "correct": false
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "I vilka Nhl-lag har Mika Zibanejad spelat i?",
+            "answers": [
+                {
+                    "alt": "New York Rangers",
+                    "correct": true
+                },
+                {
+                    "alt": "Ottawa Senators",
+                    "correct": true
                 },
                 {
                     "alt": "Calgary flames",
                     "correct": false
                 },
                 {
-                    "alt": "New Jersey devils",
+                    "alt": "Washington Capitals",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "category": "Hockey",
+            "question": "Vilka lag kom 1:a respektive 2:a i VM 2018?",
+            "answers": [
+                {
+                    "alt": "USA",
+                    "correct": false
+                },
+                {
+                    "alt": "Canada",
+                    "correct": false
+                },
+                {
+                    "alt": "Sverige",
+                    "correct": true
+                },
+                {
+                    "alt": "Schweiz",
                     "correct": true
                 }
             ]
         },
         {
             "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
+            "question": "Vilka spelare gjorde flest samt näst-flest poäng i NHL 2018?",
             "answers": [
                 {
-                    "alt": "Aik",
+                    "alt": "Taylor Hall",
+                    "correct": false
+                },
+                {
+                    "alt": "Claude Giroux",
                     "correct": true
                 },
                 {
-                    "alt": "Edmonton oilers",
+                    "alt": "Evgeni Malkin",
                     "correct": false
                 },
                 {
-                    "alt": "Calgary flames",
-                    "correct": false
-                },
-                {
-                    "alt": "New Jersey devils",
+                    "alt": "Connor McDavid",
                     "correct": true
                 }
             ]
         },
         {
             "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
+            "question": "Vilka svenkar är med i NHLs Hall of Fame?",
             "answers": [
                 {
-                    "alt": "Aik",
+                    "alt": "Börje Salming",
                     "correct": true
                 },
                 {
-                    "alt": "Edmonton oilers",
-                    "correct": false
-                },
-                {
-                    "alt": "Calgary flames",
-                    "correct": false
-                },
-                {
-                    "alt": "New Jersey devils",
-                    "correct": true
-                }
-            ]
-        },
-        {
-            "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
-            "answers": [
-                {
-                    "alt": "Aik",
+                    "alt": "Peter Forsberg",
                     "correct": true
                 },
                 {
-                    "alt": "Edmonton oilers",
-                    "correct": false
-                },
-                {
-                    "alt": "Calgary flames",
-                    "correct": false
-                },
-                {
-                    "alt": "New Jersey devils",
-                    "correct": true
-                }
-            ]
-        },
-        {
-            "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
-            "answers": [
-                {
-                    "alt": "Aik",
+                    "alt": "Mats Sundin",
                     "correct": true
                 },
                 {
-                    "alt": "Edmonton oilers",
+                    "alt": "Sven Tumba",
                     "correct": false
-                },
-                {
-                    "alt": "Calgary flames",
-                    "correct": false
-                },
-                {
-                    "alt": "New Jersey devils",
-                    "correct": true
-                }
-            ]
-        },
-        {
-            "category": "Hockey",
-            "question": "I vilka lag har Jesper Bratt spelat i?",
-            "answers": [
-                {
-                    "alt": "Aik",
-                    "correct": true
-                },
-                {
-                    "alt": "Edmonton oilers",
-                    "correct": false
-                },
-                {
-                    "alt": "Calgary flames",
-                    "correct": false
-                },
-                {
-                    "alt": "New Jersey devils",
-                    "correct": true
                 }
             ]
         }

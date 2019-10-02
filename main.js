@@ -4,7 +4,7 @@
 //kolla ifall checkboxes är true eller false
 //spara värde så man ser score i slutet 
 
-
+// skapar quiz class
 class Quiz {
     constructor(name) {
         this.name = name;
@@ -13,24 +13,28 @@ class Quiz {
         this.currentQuestion = 0;
         this.score = 0;
     }
+    //metod som tar in värdet name som spelaren skriver in
     setName(){
         this.name = document.getElementById("name").value;
     }
+    //metod som tar in hur många frågor som spelaren vill köra
     setnoOfQuestions(){
         this.noOfQuestions = document.getElementById("noOfQuestions").value;
     }
+    //metod som huvudsakligen tar index 0 från json och adderar med en
     nextQuestion(){
         this.currentQuestion++
     }
 }
 
+//skapar question class
 class Question {
     constructor(category, question, answer) {
         this.category = category;
         this.question = question;
         this.answer = answer;    
     }
-
+    //
     addQuests(json) {
         for (let json_questions of json.questions){
             let question = new Question(json_questions.category, json_questions.question, json_questions.answers);
@@ -38,13 +42,13 @@ class Question {
         }
     }    
 }
-
+//funktion som döljer och visar när man trycker på startknappen
 function display() {
     document.getElementById("display").style.display = "none";
     document.getElementById('choices').classList.remove('hidden');
 }
 
-let json = getJSON("http://www.mocky.io/v2/5d949e5c2f00002d008ff84c");
+let json = getJSON("http://www.mocky.io/v2/5d94ed2b2f00002d008ffa3c");
 let questionObject = new Question();
 let quiz = new Quiz(); 
 
@@ -98,7 +102,7 @@ function checkAnswer(answer){
     }
         
 }
-
+//skriver ut vilken fråga man är på 
 function progress(){
     let progress = document.getElementById("progress");
     progress.innerHTML = "Question " + (quiz.currentQuestion+1) + " of " + quiz.noOfQuestions;
