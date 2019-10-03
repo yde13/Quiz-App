@@ -12,43 +12,47 @@
     <div class="background">
         <div class="grid">
             <div id="question">
+                <br>
                 <h1>Welcome To The Hockey-quiz</h1>
+                <br>
             </div>
             
             <hr style="margin-bottom: 20px">
             <span id="display">
             <p>
-                skriv in ditt namn:
+                Skriv in ditt namn:
                 <br>
                 <br>
                 <input id="name" type="text">
-                <br>
-                <br>
-                skriv in hur många frågor du vill köra
-                <br>
-                <br>
+                <hr style="margin-bottom: 20px">
+                Skriv in hur många frågor du vill köra
                 <input id="noOfQuestions" type="number" min="1" max="12">
+                <hr style="margin-bottom: 20px">
             </p>
             <button id="start" onclick="display()">Start</button>
             </span>
             
             <span id="choices" class="hidden">
-                <input type="checkbox" id="choice1" class="checkboxes"><span id="answer1"></span>
+                <input type="checkbox" id="choice1" class="checkboxes"> <span id="answer1"></span>
                 <br>
-                <input type="checkbox" id="choice2" class="checkboxes"><span id="answer2"></span>
                 <br>
-                <input type="checkbox" id="choice3" class="checkboxes"><span id="answer3"></span>
+                <input type="checkbox" id="choice2" class="checkboxes"> <span id="answer2"></span>
                 <br>
-                <input type="checkbox" id="choice4" class="checkboxes"><span id="answer4"></span>
+                <br>
+                <input type="checkbox" id="choice3" class="checkboxes"> <span id="answer3"></span>
+                <br>
+                <br>
+                <input type="checkbox" id="choice4" class="checkboxes"> <span id="answer4"></span>
             
             <hr style="margin-bottom: 50px">
             
             <button id="next"> Next</button>
-            </span>
+            
             <br>
             <footer>
                     <p  id="progress">x av y</p>
             </footer>
+        </span>
         </div>
     </div>
 </div> 
