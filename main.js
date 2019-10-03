@@ -20,7 +20,7 @@ class Quiz {
         this.noOfQuestions = document.getElementById("noOfQuestions").value;
         
     }
-    //metod som huvudsakligen tar index 0 från json och adderar med en
+    //metod som huvudsakligen tar index 0 från json och adderar med en för varje gång man trycker på next knappen
     nextQuestion(){
         this.currentQuestion++
     }
@@ -86,6 +86,8 @@ next.addEventListener("click", function(e){
     quiz.setName();
     quiz.setnoOfQuestions();
     progress();
+    amountOfQuestions();
+    
 });
 });
 
@@ -94,7 +96,6 @@ let choices = document.getElementById("choices");
 choices.addEventListener('click', (event)=>
 {
   console.log(event.target.id);
-
 });
 
 //skpar en function checkanswer som håller koll på vilken checkbox spelaren trycker på samt vilken checkbox som är true och false
@@ -106,18 +107,23 @@ function checkAnswer() {
     return JSON.stringify(checkboxes) == JSON.stringify(correctAnswers);
 }
 
-//skriver ut vilken fråga man är på 
+//skriver ut vilken fråga man är på samt namnet spelaren skriver in
 function progress(){
     let progress = document.getElementById("progress");
     progress.innerHTML = "Question " + (quiz.currentQuestion+1) + " of " + quiz.noOfQuestions;
 
     let setplayer = document.getElementById("setplayer")
-    
     setplayer.innerHTML = quiz.name;
-
 }
 
-/*function finish(){
-    let finish = quiz.noOfQuestions.value;
-    if (quiz.noOfQuestions === 
-}*/
+function amountOfQuestions(){
+    if(quiz.noOfQuestions <= quiz.quests.length){
+        quiz.quests = quiz.quests.slice(0, (quiz.noOfQuestions));
+
+        this.progress();
+    }
+}
+
+function finalScore(){
+    
+}
