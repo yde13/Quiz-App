@@ -1,6 +1,5 @@
 
 //spara värdet noofquestion och skriva ut så många frågor som spelare vill ha
-//kunna trycka på checkboxes som sparas nånstans(checked)
 //skapa en slutsida som visas när användaren svarat på det antal frågor som spelaren skrivit
 
 // skapar quiz class
@@ -19,6 +18,7 @@ class Quiz {
     //metod som tar in hur många frågor som spelaren vill köra
     setnoOfQuestions(){
         this.noOfQuestions = document.getElementById("noOfQuestions").value;
+        
     }
     //metod som huvudsakligen tar index 0 från json och adderar med en
     nextQuestion(){
@@ -110,4 +110,14 @@ function checkAnswer() {
 function progress(){
     let progress = document.getElementById("progress");
     progress.innerHTML = "Question " + (quiz.currentQuestion+1) + " of " + quiz.noOfQuestions;
+
+    let setplayer = document.getElementById("setplayer")
+    
+    setplayer.innerHTML = quiz.name;
+
 }
+
+/*function finish(){
+    let finish = quiz.noOfQuestions.value;
+    if (quiz.noOfQuestions === 
+}*/
