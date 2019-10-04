@@ -8,7 +8,7 @@ class Quiz {
         this.currentQuestion = 0;
         this.score = 0;
     }
-    
+
     //metod som tar in värdet name som spelaren skriver in
     setName() {
         this.name = document.getElementById("name").value;
@@ -17,7 +17,6 @@ class Quiz {
     //metod som tar in hur många frågor som spelaren vill köra
     setnoOfQuestions() {
         this.noOfQuestions = document.getElementById("noOfQuestions").value;
-
     }
 
     //metod som huvudsakligen tar index 0 från json och adderar med en för varje gång man trycker på next knappen
@@ -67,7 +66,7 @@ class Quiz {
         document.getElementById("showScore").style.display = "block";
         let showScore = document.getElementById("showScore");
 
-        showScore.innerHTML = quiz.score + " poäng fick du";
+        showScore.innerHTML = quiz.name + ", du fick " + quiz.score + " av " + quiz.quests.length + " möjliga!" ;
         }
     }
 }
@@ -132,9 +131,7 @@ document.getElementById("next").addEventListener("click", function (e) {
         quiz.progress();
         quiz.amountOfQuestions();
         quiz.finalScore();
-
     });
-
 });
 
 let choices = document.getElementById("choices");

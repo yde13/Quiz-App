@@ -6,22 +6,23 @@ body{
     margin:0;
     font-size: 15px;
     color: #eeeeee;
+    text-align: left;
+    padding-left: 0px;
 }
 .hidden {
   display: none;
   text-align: left;
 }
+p{
+  text-align: center;
+}
 #display{
-  color: #afb2b4;
+  color: #ffffff;
   font-size: 13px;
   text-align: center;
-  padding-left: 50px;
-}
-::placeholder{
-  color: #fff;
 }
 .grid{
-    width: 600px;
+    width: 400px;
     height: 500px;
     margin: 0 auto;
     background-color: rgb(0, 0, 0);
@@ -29,17 +30,9 @@ body{
     border-radius: 50px;
     border: 2px solid #cbcbcb;
     box-shadow: 10px 15px 5px #242121;
-    margin-top: 50px;
-    text-align: center;
-    opacity: 0.85;
-}
-h3{
-    font-family: "Press Start 2P";
-    background-color: black;
-    font-size:15px;
-    text-align: center;
-    color: #fff;
-    padding: 2px 0px;  
+    margin-top: 60px;
+    
+    opacity: 0.9;
 }
 #name{
     background-color: #778897;
@@ -48,7 +41,7 @@ h3{
     color: #fff;
     border: 1px solid #1d3c6a;
     border-radius: 50px;
-    margin: 10px 40px 10px 0px;
+    margin: 18px 40px 10px 0px;
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
@@ -61,13 +54,12 @@ h3{
   color: #fff;
   border: 1px solid #1d3c6a;
   border-radius: 50px;
-  margin: 10px 40px 10px 0px;
+  margin: 18px 40px 10px 150px;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   font-family: "Press Start 2P";
 }
-
 .grid h1{
     font-family: "Press Start 2P";
     background-color: black;
@@ -79,7 +71,7 @@ h3{
 .grid #question{
     font-family: "Press Start 2P";
     font-size: 20px;
-    color: #5a6772;
+    color: #eeeff0;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -91,7 +83,7 @@ h3{
   color: #fff;
   border: 1px solid #1d3c6a;
   border-radius: 30px;
-  margin: 10px 40px 10px 0px;
+  margin: 10px 40px 10px 150px;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -103,7 +95,7 @@ h3{
   color: #fff;
   border: 1px solid #1d3c6a;
   border-radius: 30px;
-  margin: 10px 40px 10px 0px;
+  margin: 0px 40px 20px 150px;
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -145,11 +137,11 @@ h3{
   border: 2px solid #cbcbcb;
   box-shadow: 10px 15px 5px #242121;
   text-align: center;
-  opacity: 0.85;
+  opacity: 0.9;
   color: #cbcbcb;
   margin: auto;
   margin-top: 150px;
-  line-height: 140px;
+  line-height: 50px;
 }
 .background {
     position: absolute;
@@ -159,7 +151,6 @@ h3{
     bottom: 0;
     animation: bg-animation 10s infinite;
   }
-  
   @-webkit-keyframes bg-animation {
     0% {
       background-color: red;
@@ -186,7 +177,6 @@ h3{
       background-color: red;
     }
   }
-  
   @keyframes bg-animation {
     0% {
       background-color: red;

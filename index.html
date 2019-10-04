@@ -19,16 +19,18 @@
                 <span id="display">
                     <p>
                         Skriv in ditt namn:
-                        <br>
-                        <input id="name" type="text" >
-
+                        
+                        <input id="name" type="text" style="text-transform: capitalize" >
+                        
                         <hr style="margin-bottom: 20px">
-
-                        Antal frågor vill du köra:
-                        <br>
+                        <a>Antal frågor vill du köra:</a>
+                       
                         <input id="noOfQuestions" type="number" min="1" max="12">
-
+                        
                         <hr style="margin-bottom: 20px">
+                        
+                        OBS. Frågorna kan innehålla 1-4 rätta svar 
+                        Lycka till!
                     </p>
                     <button id="start" onclick="quiz.display()">Start</button>
                 </span>
