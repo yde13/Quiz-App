@@ -21,6 +21,11 @@ class Quiz {
     nextQuestion() {
         this.currentQuestion++
     }
+    //funktion som döljer och visar när man trycker på startknappen
+    display() {
+    document.getElementById("display").style.display = "none";
+    document.getElementById('choices').classList.remove('hidden');
+}
 }
 
 //skapar question class
@@ -38,11 +43,7 @@ class Question {
         }
     }
 }
-//funktion som döljer och visar när man trycker på startknappen
-function display() {
-    document.getElementById("display").style.display = "none";
-    document.getElementById('choices').classList.remove('hidden');
-}
+
 //hämtar data från min json
 let json = getJSON("http://www.mocky.io/v2/5d94ed2b2f00002d008ffa3c");
 let questionObject = new Question();
@@ -75,6 +76,7 @@ document.getElementById("next").addEventListener("click", function (e) {
         };
         console.log(checkAnswer());
         quiz.nextQuestion();
+        quiz.display();
         if(quiz.currentQuestion < quiz.quests.length) {
             document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
             document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
