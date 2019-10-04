@@ -53,7 +53,7 @@ let quiz = new Quiz();
 questionObject.addQuests(json);
 
 document.addEventListener("DOMContentLoaded", function (e) {
-    document.getElementById("next").addEventListener("click", function (e) {
+document.getElementById("next").addEventListener("click", function (e) {
 
 
     });
@@ -77,17 +77,21 @@ document.addEventListener("DOMContentLoaded", function (e) {
         };
         console.log(checkAnswer());
         quiz.nextQuestion();
-        document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
-        document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
-        document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
-        document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
-        document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
+        if(quiz.currentQuestion < quiz.quests.length) {
+            document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
+            document.getElementById("answer1").innerHTML = quiz.quests[quiz.currentQuestion].answer[0].alt;
+            document.getElementById("answer2").innerHTML = quiz.quests[quiz.currentQuestion].answer[1].alt;
+            document.getElementById("answer3").innerHTML = quiz.quests[quiz.currentQuestion].answer[2].alt;
+            document.getElementById("answer4").innerHTML = quiz.quests[quiz.currentQuestion].answer[3].alt;
+        }  
         quiz.setName();
         quiz.setnoOfQuestions();
         progress();
         amountOfQuestions();
+        finalScore();
 
     });
+
 });
 
 
@@ -111,17 +115,29 @@ function progress() {
     progress.innerHTML = "Question " + (quiz.currentQuestion + 1) + " of " + quiz.noOfQuestions;
 
     let setplayer = document.getElementById("setplayer")
-    setplayer.innerHTML = quiz.name;
+    setplayer.innerHTML = "Lycka till " + quiz.name;
 }
 
 function amountOfQuestions() {
     if (quiz.noOfQuestions <= quiz.quests.length) {
         quiz.quests = quiz.quests.slice(0, (quiz.noOfQuestions));
 
+        console.log(quiz.score + " Poäng");
+
         this.progress();
     }
 }
 
 function finalScore() {
+    if(quiz.currentQuestion >= quiz.quests.length){
+        console.log("Du fick " + quiz.score + " poäng");
+        document.getElementsByClassName("grid")[0].style.display = "none";
+        document.getElementById("showScore").style.display = "block";
+        let showScore = document.getElementById("showScore");
 
+
+        showScore.innerHTML = quiz.score + " poäng fick du";
+
+    }
+    
 }
