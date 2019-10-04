@@ -1,6 +1,4 @@
 
-//skapa en slutsida som visas när användaren svarat på det antal frågor som spelaren skrivit
-
 // skapar quiz class
 class Quiz {
     constructor(name) {
@@ -45,7 +43,7 @@ function display() {
     document.getElementById("display").style.display = "none";
     document.getElementById('choices').classList.remove('hidden');
 }
-
+//hämtar data från min json
 let json = getJSON("http://www.mocky.io/v2/5d94ed2b2f00002d008ffa3c");
 let questionObject = new Question();
 let quiz = new Quiz();
@@ -57,7 +55,7 @@ document.getElementById("next").addEventListener("click", function (e) {
 
 
     });
-
+    //skapar eventlistner när man trycker på knappen start
     let start = document.getElementById("start");
     start.addEventListener("click", function (e) {
         document.getElementById("question").innerHTML = quiz.quests[quiz.currentQuestion].question;
@@ -68,9 +66,9 @@ document.getElementById("next").addEventListener("click", function (e) {
         quiz.setName();
         quiz.setnoOfQuestions();
         progress();
-        console.log(quiz.name, '\n', quiz.noOfQuestions, '\n', question, '\n', answer1, '\n', answer2, '\n', answer3, '\n', answer4);
+        //console.log(quiz.name, '\n', quiz.noOfQuestions, '\n', question, '\n', answer1, '\n', answer2, '\n', answer3, '\n', answer4);
     });
-
+    //skapar eventlistner när man trycker på knappen next
     next.addEventListener("click", function (e) {
         if (checkAnswer()) {
             quiz.score++;
@@ -94,13 +92,12 @@ document.getElementById("next").addEventListener("click", function (e) {
 
 });
 
-
 let choices = document.getElementById("choices");
 choices.addEventListener('click', (event) => {
     console.log(event.target.id);
 });
 
-//skpar en function checkanswer som håller koll på vilken checkbox spelaren trycker på samt vilken checkbox som är true och false
+//skpar en function checkanswer som håller koll på vilken checkbox spelaren trycker på samt vilken checkbox som är true eller false
 function checkAnswer() {
     let checkboxes = Array.from(document.getElementsByClassName("checkboxes")).map((checkbox) => { return checkbox.checked });
 
@@ -117,7 +114,7 @@ function progress() {
     let setplayer = document.getElementById("setplayer")
     setplayer.innerHTML = "Lycka till " + quiz.name;
 }
-
+//funktion som slicear från index 0 till det som spelaren skriver in i input noOfQuestions 
 function amountOfQuestions() {
     if (quiz.noOfQuestions <= quiz.quests.length) {
         quiz.quests = quiz.quests.slice(0, (quiz.noOfQuestions));
@@ -127,7 +124,7 @@ function amountOfQuestions() {
         this.progress();
     }
 }
-
+//funktion som gör att scoret visas om currentquestion är större eller liika med quests length
 function finalScore() {
     if(quiz.currentQuestion >= quiz.quests.length){
         console.log("Du fick " + quiz.score + " poäng");
