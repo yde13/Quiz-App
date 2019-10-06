@@ -113,10 +113,13 @@ document.getElementById("next").addEventListener("click", function (e) {
     });
     //skapar eventlistner när man trycker på knappen next
     next.addEventListener("click", function (e) {
+        //en queryselectorall metod som gör att checkboxes inte fastnar nät man trycker nästa fråga
+        refresher = document.querySelectorAll('#choice1, #choice2, #choice3, #choice4')
         if (quiz.checkAnswer()) {
             quiz.score++;
         };
         console.log(quiz.checkAnswer());
+        refresher.forEach( r=>r.checked = false )
         quiz.nextQuestion();
         quiz.display();
         if(quiz.currentQuestion < quiz.quests.length) {
