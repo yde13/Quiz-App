@@ -67,6 +67,7 @@ class Quiz {
         let showScore = document.getElementById("showScore");
 
         showScore.innerHTML = quiz.name + ", du fick " + quiz.score + " av " + quiz.quests.length + " möjliga!" ;
+        
         }
     }
 }
