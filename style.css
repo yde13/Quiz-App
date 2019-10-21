@@ -143,6 +143,7 @@ p{
   margin-top: 150px;
   line-height: 50px;
 }
+
 .background {
     position: absolute;
     top: 0;
@@ -203,3 +204,4 @@ p{
       background-color: red;
     }
   }
+ 
