@@ -144,6 +144,7 @@ p{
   line-height: 50px;
 }
 
+
 .background {
     position: absolute;
     top: 0;
@@ -204,4 +205,51 @@ p{
       background-color: red;
     }
   }
+  @media screen and (max-width: 375px){
+
+    .grid{
+      width: 65%;
+      height: 620px;
+      margin-top: 50px;
+    }
+    #start{
+      margin-left: 10%;
+      width: 80%;
+      height: 10%;
+      font-size: 20px;
+    }
+    #noOfQuestions{
+      margin-left: 5%;
+      width: 80%;
+      height: 5%;
+    }
+    #name{
+      margin-left: 5%;
+      width: 80%;
+      height: 30px;;
+    }
+    #next{
+      margin-left: 8%;
+      width: 90%;
+      height: 7%;
+      font-size: 20px;  
+    }
+    .checkboxes{
+      width: 32px;
+      height: 32px;
+      text-align: left;
+    }
+    #answer1, #answer2, #answer3, #answer4{
+      font-size: 10px;
+    }
+    .grid #question{
+      font-size: 15px;
+      padding: 10px;
+    }
+    #showScore{
+      height: 300px;
+      font-size: 30px;
+    }
+
+}
  
